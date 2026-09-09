@@ -1,0 +1,6 @@
+package com.adnan.java8_9_11.Java_8.Lambda2.SimpleLambda1;
+
+@FunctionalInterface
+public interface Test2 {
+    String test2Method(String a);
+}

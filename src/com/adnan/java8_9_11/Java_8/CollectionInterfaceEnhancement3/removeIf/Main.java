@@ -1,8 +1,7 @@
-package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement.removeIf;
+package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement3.removeIf;
 
 import java.util.ArrayList;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class Main {

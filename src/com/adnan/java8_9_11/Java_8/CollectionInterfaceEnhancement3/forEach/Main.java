@@ -1,4 +1,4 @@
-package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement.forEach;
+package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement3.forEach;
 
 import java.util.ArrayList;
 import java.util.List;

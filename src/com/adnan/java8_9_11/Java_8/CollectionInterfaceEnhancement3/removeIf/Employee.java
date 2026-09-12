@@ -1,4 +1,4 @@
-package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement.removeIf;
+package com.adnan.java8_9_11.Java_8.CollectionInterfaceEnhancement3.removeIf;
 
 public class Employee {
     private String name;

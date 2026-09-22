@@ -10,6 +10,13 @@ public class CompilationEnhancement1 {
         System.out.println(s1==s3); //true
         //== compares their memory address not the characters present inside string
         System.out.println(s2.equals(s4)); //equals() compares strings character by character.
+        //If both strings are same then there hashcode will be same because hashcode of
+        //string will be generated based on the characters
+        System.out.println(s2.hashCode());
+        System.out.println(s4.hashCode());
+        //intern()
+        String s5 = new String("Adnan").intern();
+        System.out.println(s1==s5); //true
 
     }
 }
@@ -40,5 +47,11 @@ value will be stored in SCP without any reference.
 If we are again creating same string using new keyword new memory in Heap will be allocated for this
 new keyword everytime allots a new memory. then SCP will be checked as it already exist t will not
 be created again in SCP.
+
+intern():
+if we are creating string using new keyword generally this will be created in Heap memory
+but when we apply intern() method on object of string this will be converted to same
+as String literal and the string created using new keyword will be stored in SCP if
+already exist then directly referenced to existing string.(gets same functionality as string literal).
 
  */

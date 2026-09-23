@@ -1,9 +1,7 @@
 package com.adnan.java8_9_11.Java_8.Stream4.sorted6;
 
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -20,6 +18,18 @@ public class Main {
                 .collect(Collectors.toList());
         System.out.println(list1);
 
+        int[] arr = {6,7,1,82,75,91};
+        //get 2nd smallest number
+        Arrays.stream(arr).sorted().limit(2).skip(1).forEach(res-> System.out.println(res));
+        //get 2nd Highest number
+        Arrays.stream(arr).boxed().sorted((a,b)->Integer.compare(b,a))
+                .limit(2).skip(1).forEach((res)-> System.out.println(res));
+
+        //get average salary
+        DoubleSummaryStatistics c = empList.stream().collect(Collectors.summarizingDouble(e->e.getSalary()));
+        System.out.println(c.getAverage());
+        Double c1 = empList.stream().mapToDouble(e->e.getSalary()).average().orElse(0.0);
+        System.out.println(c1);
     }
 }
 /*
